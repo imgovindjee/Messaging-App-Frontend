@@ -57,7 +57,7 @@ const App = () => {
       .catch((error) => {
         // stroing the data of userIsNotAvailable for login in "redux-store"
         dispatch(userNotExists())
-        toast.error(error?.respones?.data?.message || error?.respones?.data?._message || "Something fishy, Please try again")
+        // toast.error(error?.respones?.data?.message || error?.respones?.data?._message || "Something fishy, Please try again")
       })
   }, [dispatch])
 
